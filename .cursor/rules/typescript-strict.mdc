@@ -1,0 +1,23 @@
+---
+description: Stricter TypeScript checks for source edits
+globs: **/*.ts
+alwaysApply: false
+---
+
+# TypeScript Strict Checks
+
+Apply these checks on TypeScript edits.
+
+- Keep `strict`-safe typings: no `any`; use `unknown` + narrowing.
+- Add explicit return types for exported functions.
+- Use named exports only; do not introduce default exports.
+- Keep modules side-effect free and tree-shakeable.
+- Prefer one focused function per file and keep files small.
+- Use type-only imports/exports where applicable.
+
+Before finishing substantial TS changes:
+
+- Run `npm run format`.
+- Run `npm run lint`.
+- Run `npm run test` when logic behavior changes.
+- Ensure `npm run build` succeeds for declaration/type integrity.

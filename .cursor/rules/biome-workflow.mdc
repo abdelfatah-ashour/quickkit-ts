@@ -1,0 +1,16 @@
+---
+description: Enforce Biome commands for AI edits
+alwaysApply: true
+---
+
+# Biome Workflow
+
+Use Biome as the single formatter/linter for all AI-generated edits.
+
+- After substantive code edits, run `npm run format`.
+- Then run `npm run lint`.
+- If lint reports fixable issues, run `npm run lint:fix` and re-run `npm run lint`.
+- Do not introduce ESLint or Prettier configs/scripts.
+- Keep import ordering and formatting Biome-compliant before finishing.
+
+For non-code edits (for example docs-only changes), skip command runs unless requested.

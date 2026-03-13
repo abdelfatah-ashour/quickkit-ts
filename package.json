@@ -1,0 +1,69 @@
+{
+  "name": "atom-x",
+  "description": "Lightweight tree-shakeable TypeScript date utilities.",
+  "private": false,
+  "version": "0.1.0",
+  "author": "Abdelfatah Ashour <abdelfatahashour4@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdelfatah-ashour/atom-x.git"
+  },
+  "homepage": "https://github.com/abdelfatah-ashour/atom-x#readme",
+  "bugs": {
+    "url": "https://github.com/abdelfatah-ashour/atom-x/issues"
+  },
+  "keywords": [
+    "atom-x",
+    "typescript",
+    "utilities",
+    "tree-shaking",
+    "frontend",
+    "seo",
+    "geo",
+    "geolocation",
+    "vite",
+    "cdn"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE*"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./date": {
+      "types": "./dist/atom-date/index.d.ts",
+      "import": "./dist/date.js",
+      "require": "./dist/date.cjs"
+    }
+  },
+  "unpkg": "./dist/atom-x.umd.js",
+  "jsdelivr": "./dist/atom-x.umd.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "dev": "vite",
+    "build": "npm run clean && vite build && vite build --config vite.umd.config.ts && tsc -p tsconfig.build.json --emitDeclarationOnly",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0",
+    "vitest": "^3.2.4"
+  }
+}
