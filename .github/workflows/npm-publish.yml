@@ -40,6 +40,8 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: npm-token
     permissions:
       contents: read
       id-token: write
