@@ -4,11 +4,31 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - "*"
 
 jobs:
+  verify-tag-on-main:
+    runs-on: ubuntu-latest
+    outputs:
+      is_on_main: ${{ steps.check.outputs.is_on_main }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: check
+        run: |
+          git fetch origin main --depth=1
+          if git merge-base --is-ancestor "$GITHUB_SHA" origin/main; then
+            echo "is_on_main=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_on_main=false" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
+    needs: verify-tag-on-main
+    if: needs.verify-tag-on-main.outputs.is_on_main == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
