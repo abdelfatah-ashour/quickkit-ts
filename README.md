@@ -1,6 +1,6 @@
 # quickkit-ts
 
-Lightweight, zero-dependency TypeScript date utilities.
+Lightweight, zero-dependency TypeScript utilities.
 
 Designed for excellent package discoverability and distribution:
 

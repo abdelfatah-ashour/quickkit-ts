@@ -1,6 +1,6 @@
 {
   "name": "quickkit-ts",
-  "description": "Lightweight tree-shakeable TypeScript date utilities.",
+  "description": "Lightweight tree-shakeable TypeScript utilities.",
   "private": false,
   "version": "0.3.3",
   "author": "Abdelfatah Ashour <abdelfatahashour4@gmail.com>",
@@ -15,14 +15,7 @@
   "keywords": [
     "quickkit-ts",
     "typescript",
-    "utilities",
-    "tree-shaking",
-    "frontend",
-    "seo",
-    "geo",
-    "geolocation",
-    "vite",
-    "cdn"
+    "utilities"
   ],
   "type": "module",
   "publishConfig": {
