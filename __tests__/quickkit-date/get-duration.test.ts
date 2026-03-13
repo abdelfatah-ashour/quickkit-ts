@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { getDuration } from "../../src/atom-date/get-duration.js";
+import { getDuration } from "../../src/quickkit-date/get-duration.js";
 
 describe("getDuration", () => {
   it("returns the absolute difference between two valid dates", () => {

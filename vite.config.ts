@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 const entries = {
   index: resolve("src/index.ts"),
-  date: resolve("src/atom-date/index.ts"),
+  date: resolve("src/quickkit-date/index.ts"),
 } as const;
 
 export default defineConfig({
@@ -14,7 +14,7 @@ export default defineConfig({
     sourcemap: false,
     lib: {
       entry: entries,
-      name: "AtomX",
+      name: "QuickkitTs",
       formats: ["es", "cjs"],
       fileName: (format, entryName): string =>
         format === "es" ? `${entryName}.js` : `${entryName}.cjs`,

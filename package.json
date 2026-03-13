@@ -1,19 +1,19 @@
 {
-  "name": "atom-x",
+  "name": "quickkit-ts",
   "description": "Lightweight tree-shakeable TypeScript date utilities.",
   "private": false,
   "version": "0.3.1",
   "author": "Abdelfatah Ashour <abdelfatahashour4@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abdelfatah-ashour/atom-x.git"
+    "url": "https://github.com/abdelfatah-ashour/quickkit-ts.git"
   },
-  "homepage": "https://github.com/abdelfatah-ashour/atom-x#readme",
+  "homepage": "https://github.com/abdelfatah-ashour/quickkit-ts#readme",
   "bugs": {
-    "url": "https://github.com/abdelfatah-ashour/atom-x/issues"
+    "url": "https://github.com/abdelfatah-ashour/quickkit-ts/issues"
   },
   "keywords": [
-    "atom-x",
+    "quickkit-ts",
     "typescript",
     "utilities",
     "tree-shaking",
@@ -41,13 +41,13 @@
       "require": "./dist/index.cjs"
     },
     "./date": {
-      "types": "./dist/atom-date/index.d.ts",
+      "types": "./dist/quickkit-date/index.d.ts",
       "import": "./dist/date.js",
       "require": "./dist/date.cjs"
     }
   },
-  "unpkg": "./dist/atom-x.umd.js",
-  "jsdelivr": "./dist/atom-x.umd.js",
+  "unpkg": "./dist/quickkit-ts.umd.js",
+  "jsdelivr": "./dist/quickkit-ts.umd.js",
   "scripts": {
     "clean": "rm -rf dist",
     "dev": "vite",

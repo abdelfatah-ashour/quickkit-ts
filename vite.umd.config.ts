@@ -10,9 +10,9 @@ export default defineConfig({
     sourcemap: false,
     lib: {
       entry: resolve("src/index.ts"),
-      name: "AtomX",
+      name: "QuickkitTs",
       formats: ["umd"],
-      fileName: (): string => "atom-x.umd.js",
+      fileName: (): string => "quickkit-ts.umd.js",
     },
   },
 });

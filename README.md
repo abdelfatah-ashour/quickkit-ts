@@ -1,4 +1,4 @@
-# atom-x
+# quickkit-ts
 
 Lightweight, zero-dependency TypeScript date utilities.
 
@@ -11,14 +11,14 @@ Designed for excellent package discoverability and distribution:
 ## Install
 
 ```bash
-npm i atom-x
+npm i quickkit-ts
 ```
 
 ## Usage
 
 ```ts
-import { format, fromNow, getDuration } from "atom-x/date";
-import { format as formatDate } from "atom-x";
+import { format, fromNow, getDuration } from "quickkit-ts/date";
+import { format as formatDate } from "quickkit-ts";
 ```
 
 ## Scripts

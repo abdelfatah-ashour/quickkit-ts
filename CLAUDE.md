@@ -1,4 +1,4 @@
-# atom-x
+# quickkit-ts
 
 A zero-dependency, tree-shakeable TypeScript date utility library built with Vite in library mode.
 Published to **npm** and served via **CDN** (unpkg, jsdelivr, esm.sh).
@@ -7,18 +7,18 @@ Published to **npm** and served via **CDN** (unpkg, jsdelivr, esm.sh).
 
 ## Project Overview
 
-atom-x currently provides one module:
+quickkit-ts currently provides one module:
 
 | Module | Entry | Purpose |
 |------------|-------------------------|----------------------------------------------|
-| `AtomDate` | `src/atom-date/index.ts` | Date helpers — locale-aware relative time, preset-based formatting, and time difference calculations |
+| `QuickkitDate` | `src/quickkit-date/index.ts` | Date helpers — locale-aware relative time, preset-based formatting, and time difference calculations |
 
 The main entry point (`src/index.ts`) re-exports the date module:
 
 ```ts
-import { format, fromNow, getDuration } from "atom-x/date";
+import { format, fromNow, getDuration } from "quickkit-ts/date";
 // or import from root
-import { format, fromNow, getDuration } from "atom-x";
+import { format, fromNow, getDuration } from "quickkit-ts";
 ```
 
 ---
@@ -36,18 +36,18 @@ import { format, fromNow, getDuration } from "atom-x";
 ## Directory Structure
 
 ```txt
-atom-x/
+quickkit-ts/
 ├── src/
-│   ├── index.ts              # barrel — re-exports AtomDate
-│   └── atom-date/
-│       ├── index.ts          # barrel for AtomDate
+│   ├── index.ts              # barrel — re-exports QuickkitDate
+│   └── quickkit-date/
+│       ├── index.ts          # barrel for QuickkitDate
 │       ├── format.ts
 │       ├── from-now.ts
 │       ├── get-duration.ts
 │       ├── resolve-locale.ts
 │       └── type-format.ts
 ├── __tests__/
-│   └── atom-date/
+│   └── quickkit-date/
 ├── biome.json
 ├── tsconfig.json
 ├── tsconfig.build.json
@@ -73,7 +73,7 @@ atom-x/
 Library entries:
 
 - `index`: `src/index.ts`
-- `date`: `src/atom-date/index.ts`
+- `date`: `src/quickkit-date/index.ts`
 
 Formats:
 
@@ -111,7 +111,7 @@ Keep only:
 ## Testing
 
 - Use **vitest**.
-- Test files in `__tests__/atom-date/`.
+- Test files in `__tests__/quickkit-date/`.
 - Each exported function must have at least one happy-path and one edge-case test.
 
 ---

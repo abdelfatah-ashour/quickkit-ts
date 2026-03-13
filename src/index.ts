@@ -1,1 +1,1 @@
-export * from "./atom-date/index.js";
+export * from "./quickkit-date/index.js";

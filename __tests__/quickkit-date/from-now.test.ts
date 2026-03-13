@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
-import { fromNow } from "../../src/atom-date/from-now.js";
+import { fromNow } from "../../src/quickkit-date/from-now.js";
 
 describe("fromNow", () => {
   afterEach(() => {

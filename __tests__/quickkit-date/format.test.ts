@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { format } from "../../src/atom-date/format.js";
+import { format } from "../../src/quickkit-date/format.js";
 
 describe("format", () => {
   it("formats valid date input with a type format preset", () => {
