@@ -2,7 +2,7 @@
   "name": "quickkit-ts",
   "description": "Lightweight tree-shakeable TypeScript utilities.",
   "private": false,
-  "version": "0.3.7",
+  "version": "0.3.8",
   "author": "Abdelfatah Ashour <abdelfatahashour4@gmail.com>",
   "repository": {
     "type": "git",
