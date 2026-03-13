@@ -2,7 +2,7 @@
   "name": "atom-x",
   "description": "Lightweight tree-shakeable TypeScript date utilities.",
   "private": false,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Abdelfatah Ashour <abdelfatahashour4@gmail.com>",
   "repository": {
     "type": "git",
